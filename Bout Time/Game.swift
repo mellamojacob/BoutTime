@@ -78,6 +78,7 @@ class Game: UIViewController {
         for view in self.view.subviews as [UIView] {
             view.hidden = !view.hidden
         }
+        gameOver = false
         loadNextRound()
     }
     
@@ -89,6 +90,7 @@ class Game: UIViewController {
     var counter = 60
     var points = 0
     var numberOfRoundsPlayed = 0
+    var gameOver = false
 
     //Beginning of game-initialize all events, hide all unimportant UIs
     override func viewDidLoad() {
@@ -113,7 +115,9 @@ class Game: UIViewController {
     //If the phone is shaken, it checks if the current order is correct
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == .MotionShake {
-            checkAnswer()
+            if !gameOver{
+                checkAnswer()
+            }
         }
     }
     
@@ -174,6 +178,7 @@ class Game: UIViewController {
             endLabel.text = "You scored \(points) points out of 150 points!"
             for view in self.view.subviews as [UIView] {
                 view.hidden = !view.hidden
+                gameOver = true
             }
             
         } else {
