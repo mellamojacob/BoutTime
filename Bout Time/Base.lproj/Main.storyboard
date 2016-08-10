@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="kbL-TL-FcX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_screen" translatesAutoresizingMaskIntoConstraints="NO" id="kbL-TL-FcX">
                                 <rect key="frame" x="0.0" y="0.0" width="616" height="606"/>
                                 <color key="backgroundColor" red="0.035294117647058823" green="0.11372549019607843" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -31,7 +31,7 @@
                                             <constraint firstAttribute="width" constant="216" id="aDF-GZ-4xX"/>
                                             <constraint firstAttribute="height" constant="61" id="giA-V7-4fy"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="play_game.png"/>
+                                        <state key="normal" title="Button" image="play_game"/>
                                         <connections>
                                             <segue destination="t4t-Ff-xdM" kind="show" id="bnh-F1-JBL"/>
                                         </connections>
@@ -42,7 +42,7 @@
                                             <constraint firstAttribute="height" constant="61" id="di1-PK-wms"/>
                                             <constraint firstAttribute="width" constant="216" id="xyf-PG-Ymg"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="how_to_play.png"/>
+                                        <state key="normal" title="Button" image="how_to_play"/>
                                         <connections>
                                             <segue destination="YVw-qv-Lcl" kind="show" id="aLg-JM-5p0"/>
                                         </connections>
@@ -132,7 +132,7 @@
                                     <constraint firstAttribute="width" constant="40" id="3kp-uj-dpz"/>
                                     <constraint firstAttribute="height" constant="50" id="zLO-iR-c0O"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="down_half.png"/>
+                                <state key="normal" title="Button" image="down_half"/>
                                 <connections>
                                     <action selector="TwoDownButton:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="Iba-PS-av0"/>
                                 </connections>
@@ -143,7 +143,7 @@
                                     <constraint firstAttribute="width" constant="40" id="CYZ-dX-x5B"/>
                                     <constraint firstAttribute="height" constant="50" id="RCl-by-qWc"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="up_half.png"/>
+                                <state key="normal" title="Button" image="up_half"/>
                                 <connections>
                                     <action selector="TwoUpButton:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="H5Y-Bz-BFB"/>
                                 </connections>
@@ -154,7 +154,7 @@
                                     <constraint firstAttribute="height" constant="50" id="7dR-eE-nU4"/>
                                     <constraint firstAttribute="width" constant="40" id="gs2-8m-p8b"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="up_half.png"/>
+                                <state key="normal" title="Button" image="up_half"/>
                                 <connections>
                                     <action selector="ThreeUpButton:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="7VR-3n-tdE"/>
                                 </connections>
@@ -165,7 +165,7 @@
                                     <constraint firstAttribute="height" constant="100" id="Q9p-XH-JcU"/>
                                     <constraint firstAttribute="width" constant="40" id="wEn-N7-Uzh"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="up_full.png"/>
+                                <state key="normal" title="Button" image="up_full"/>
                                 <connections>
                                     <action selector="FourUpButton:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="DJM-0A-tFa"/>
                                 </connections>
@@ -176,7 +176,7 @@
                                     <constraint firstAttribute="width" constant="40" id="oek-lo-IJR"/>
                                     <constraint firstAttribute="height" constant="50" id="va6-qW-2Y7"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="down_half.png"/>
+                                <state key="normal" title="Button" image="down_half"/>
                                 <connections>
                                     <action selector="ThreeDownButton:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="Nz5-iO-Bk0"/>
                                 </connections>
@@ -198,8 +198,8 @@
                                     <action selector="nextRound:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="ULh-LW-WOe"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH1-h2-MBv">
-                                <rect key="frame" x="0.0" y="240" width="600" height="122"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bH1-h2-MBv">
+                                <rect key="frame" x="0.0" y="239" width="600" height="122"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="122" id="3k7-pn-Ghw"/>
                                 </constraints>
@@ -207,17 +207,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ju1-xK-uvI">
-                                <rect key="frame" x="275" y="471" width="237" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="237" id="1kn-eh-9oN"/>
-                                    <constraint firstAttribute="height" constant="67" id="fk7-3G-5o8"/>
-                                </constraints>
-                                <state key="normal" title="Button" image="play_again.png"/>
-                                <connections>
-                                    <action selector="playAgain:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="TwZ-e7-Czx"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsl-2J-rH2">
                                 <rect key="frame" x="130" y="165" width="303" height="100"/>
                                 <constraints>
@@ -234,10 +223,6 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Hb-3S-FFi">
                                 <rect key="frame" x="130" y="295" width="303" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Wyk-a8-DdW"/>
-                                    <constraint firstAttribute="width" constant="303" id="nOU-lr-hCF"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -267,7 +252,7 @@
                                     <constraint firstAttribute="width" constant="40" id="dVo-L8-RMt"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Button" image="down_full.png"/>
+                                <state key="normal" title="Button" image="down_full"/>
                                 <connections>
                                     <action selector="OneDownButton:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="yWj-Ef-yyI"/>
                                 </connections>
@@ -286,18 +271,30 @@
                                     <action selector="LabelButtonPressed:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="P7e-Xk-2Wt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ju1-xK-uvI">
+                                <rect key="frame" x="182" y="470" width="237" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="1kn-eh-9oN"/>
+                                    <constraint firstAttribute="height" constant="67" id="fk7-3G-5o8"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="play_again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="t4t-Ff-xdM" eventType="touchUpInside" id="TwZ-e7-Czx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.035294117647058823" green="0.11372549019607843" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="1Hb-3S-FFi" firstAttribute="bottom" secondItem="1u9-6p-ooA" secondAttribute="bottom" id="060-Eg-sH1"/>
                             <constraint firstItem="37u-Lf-1lE" firstAttribute="top" secondItem="q9z-E0-GPb" secondAttribute="bottom" constant="30" id="0KK-HR-Vyp"/>
                             <constraint firstItem="q9z-E0-GPb" firstAttribute="top" secondItem="fAK-mU-5WF" secondAttribute="bottom" constant="15" id="0LG-nq-79o"/>
                             <constraint firstItem="YSL-BI-orx" firstAttribute="top" secondItem="ocr-or-qHG" secondAttribute="bottom" id="3aN-8w-nMl"/>
+                            <constraint firstItem="ju1-xK-uvI" firstAttribute="centerX" secondItem="awk-sq-tuF" secondAttribute="centerX" id="4jc-nq-Het"/>
                             <constraint firstItem="bH1-h2-MBv" firstAttribute="centerX" secondItem="awk-sq-tuF" secondAttribute="centerX" id="54F-O8-b8p"/>
                             <constraint firstItem="lsl-2J-rH2" firstAttribute="top" secondItem="gdB-BT-ODk" secondAttribute="bottom" constant="30" id="5eA-G3-CRy"/>
                             <constraint firstItem="1u9-6p-ooA" firstAttribute="top" secondItem="YSL-BI-orx" secondAttribute="bottom" constant="30" id="7A0-F7-GQ8"/>
                             <constraint firstItem="MFw-dW-Xfb" firstAttribute="centerX" secondItem="awk-sq-tuF" secondAttribute="centerX" id="9hb-3Q-fDn"/>
                             <constraint firstItem="ocr-or-qHG" firstAttribute="leading" secondItem="37u-Lf-1lE" secondAttribute="trailing" constant="-40" id="At7-JD-006"/>
-                            <constraint firstItem="B26-0u-cqs" firstAttribute="top" secondItem="1Hb-3S-FFi" secondAttribute="bottom" constant="30" id="CNF-Ks-6Tv"/>
                             <constraint firstItem="1u9-6p-ooA" firstAttribute="centerX" secondItem="awk-sq-tuF" secondAttribute="centerX" id="CvM-3G-25C"/>
                             <constraint firstItem="ocr-or-qHG" firstAttribute="leading" secondItem="lsl-2J-rH2" secondAttribute="trailing" constant="-1" id="CvP-k7-Enr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bH1-h2-MBv" secondAttribute="trailing" constant="-20" id="JLL-PL-Qpy"/>
@@ -307,24 +304,25 @@
                             <constraint firstItem="WSH-fX-mKb" firstAttribute="top" secondItem="dhY-Nc-JDq" secondAttribute="bottom" id="RUa-Le-t0Y"/>
                             <constraint firstItem="WSH-fX-mKb" firstAttribute="leading" secondItem="1u9-6p-ooA" secondAttribute="trailing" constant="-40" id="VJi-zc-izf"/>
                             <constraint firstItem="dhY-Nc-JDq" firstAttribute="leading" secondItem="1u9-6p-ooA" secondAttribute="trailing" constant="-40" id="Vv3-e4-AsV"/>
-                            <constraint firstItem="ju1-xK-uvI" firstAttribute="leading" secondItem="bH1-h2-MBv" secondAttribute="trailing" constant="-325" id="X4u-0Z-Ohl"/>
                             <constraint firstItem="iMZ-pL-KxR" firstAttribute="centerX" secondItem="awk-sq-tuF" secondAttribute="centerX" id="Yac-Oa-r5z"/>
+                            <constraint firstItem="B26-0u-cqs" firstAttribute="top" secondItem="1Hb-3S-FFi" secondAttribute="bottom" constant="30" id="Yls-Be-T7O"/>
                             <constraint firstItem="D3C-eY-e6m" firstAttribute="centerX" secondItem="awk-sq-tuF" secondAttribute="centerX" id="ZVU-9s-fbZ"/>
                             <constraint firstItem="gdB-BT-ODk" firstAttribute="top" secondItem="fAK-mU-5WF" secondAttribute="bottom" constant="15" id="ZnL-6g-tY0"/>
                             <constraint firstItem="3G0-nl-UF2" firstAttribute="top" secondItem="WSH-fX-mKb" secondAttribute="bottom" constant="30" id="aBw-6L-w7S"/>
                             <constraint firstItem="3G0-nl-UF2" firstAttribute="leading" secondItem="MFw-dW-Xfb" secondAttribute="trailing" constant="-40" id="asi-Wc-Doo"/>
                             <constraint firstItem="MFw-dW-Xfb" firstAttribute="top" secondItem="WSH-fX-mKb" secondAttribute="bottom" constant="30" id="dlh-f3-i6E"/>
                             <constraint firstItem="MFw-dW-Xfb" firstAttribute="top" secondItem="WSH-fX-mKb" secondAttribute="bottom" constant="30" id="eae-pU-vdP"/>
+                            <constraint firstItem="1Hb-3S-FFi" firstAttribute="trailing" secondItem="lsl-2J-rH2" secondAttribute="trailing" id="egt-qB-DKj"/>
+                            <constraint firstItem="1Hb-3S-FFi" firstAttribute="leading" secondItem="1u9-6p-ooA" secondAttribute="leading" id="gwK-Fw-bcz"/>
                             <constraint firstItem="YSL-BI-orx" firstAttribute="leading" secondItem="37u-Lf-1lE" secondAttribute="trailing" constant="-40" id="h3F-BO-GiP"/>
+                            <constraint firstItem="1Hb-3S-FFi" firstAttribute="top" secondItem="dhY-Nc-JDq" secondAttribute="top" id="jIz-TA-7Vi"/>
                             <constraint firstItem="bH1-h2-MBv" firstAttribute="centerY" secondItem="awk-sq-tuF" secondAttribute="centerY" id="kDI-lh-sW3"/>
                             <constraint firstItem="37u-Lf-1lE" firstAttribute="centerX" secondItem="awk-sq-tuF" secondAttribute="centerX" id="kdv-ZR-yLr"/>
                             <constraint firstItem="dhY-Nc-JDq" firstAttribute="top" secondItem="YSL-BI-orx" secondAttribute="bottom" constant="30" id="kyi-AP-bib"/>
                             <constraint firstItem="ocr-or-qHG" firstAttribute="top" secondItem="q9z-E0-GPb" secondAttribute="bottom" constant="30" id="lIJ-ki-uCx"/>
                             <constraint firstItem="q9z-E0-GPb" firstAttribute="leading" secondItem="D3C-eY-e6m" secondAttribute="trailing" constant="-40" id="o3s-ak-jy3"/>
-                            <constraint firstItem="1Hb-3S-FFi" firstAttribute="top" secondItem="lsl-2J-rH2" secondAttribute="bottom" constant="30" id="qCB-hb-xST"/>
                             <constraint firstItem="D3C-eY-e6m" firstAttribute="top" secondItem="fAK-mU-5WF" secondAttribute="bottom" constant="15" id="qXm-m2-tgp"/>
                             <constraint firstItem="bH1-h2-MBv" firstAttribute="leading" secondItem="awk-sq-tuF" secondAttribute="leadingMargin" constant="-20" id="xyH-Yu-Rvg"/>
-                            <constraint firstItem="WSH-fX-mKb" firstAttribute="leading" secondItem="1Hb-3S-FFi" secondAttribute="trailing" constant="-1" id="ymp-bV-RN2"/>
                         </constraints>
                     </view>
                     <connections>
@@ -408,7 +406,7 @@
                                     <constraint firstAttribute="width" constant="209" id="eyY-Se-lDi"/>
                                     <constraint firstAttribute="height" constant="59" id="r9O-ly-H9P"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="go_back.png"/>
+                                <state key="normal" title="Button" image="go_back"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="bOf-QY-HmV"/>
                                 </connections>
@@ -455,15 +453,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="down_full.png" width="158" height="457"/>
-        <image name="down_half.png" width="158" height="229"/>
-        <image name="go_back.png" width="450" height="142"/>
-        <image name="how_to_play.png" width="450" height="142"/>
+        <image name="down_full" width="158" height="457"/>
+        <image name="down_half" width="158" height="229"/>
+        <image name="go_back" width="450" height="142"/>
+        <image name="how_to_play" width="450" height="142"/>
         <image name="next_round_success.png" width="558" height="142"/>
-        <image name="play_again.png" width="450" height="142"/>
-        <image name="play_game.png" width="450" height="142"/>
-        <image name="splash_screen.png" width="1333" height="2366"/>
-        <image name="up_full.png" width="158" height="457"/>
-        <image name="up_half.png" width="158" height="229"/>
+        <image name="play_again" width="450" height="142"/>
+        <image name="play_game" width="450" height="142"/>
+        <image name="splash_screen" width="1333" height="2366"/>
+        <image name="up_full" width="158" height="457"/>
+        <image name="up_half" width="158" height="229"/>
     </resources>
 </document>

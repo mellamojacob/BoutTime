@@ -93,6 +93,8 @@ class Game: UIViewController {
     //Beginning of game-initialize all events, hide all unimportant UIs
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadCorrectDing()
+        loadIncorrectBuzz()
         initializeEvents()
         displayEvents()
         nextRoundButton.hidden = true
@@ -154,9 +156,11 @@ class Game: UIViewController {
             points += 25
             nextRoundButton.setImage(UIImage(named: "next_round_success.png"), forState: UIControlState.Normal)
             timerLabel.text = "That is correct!"
+            playCorrectDing()
         } else {
             nextRoundButton.setImage(UIImage(named: "next_round_fail.png"), forState: UIControlState.Normal)
             timerLabel.text = "That is incorrect"
+            playIncorrectBuzz()
         }
         nextRoundButton.hidden = false
         numberOfRoundsPlayed+=1
